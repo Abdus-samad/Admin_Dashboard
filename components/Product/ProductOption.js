@@ -2,8 +2,8 @@ import Slide from 'react-reveal/Slide';
 
 const ProductOption = ({images, name, piece, price, priceCut}) => {
 	return (
-		<Slide bottom>
-			<div className='flex flex-col flex-grow rounded-md border border-gray-100 bg-white cursor-pointer hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200'>
+		<div className='flex flex-col flex-grow rounded-md border border-gray-100 bg-white cursor-pointer hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200'>
+				<Slide bottom>
 				<div className='relative flex items-center justify-center overflow-hidden flex-grow'>
 					<img
 						src={images}
@@ -28,21 +28,9 @@ const ProductOption = ({images, name, piece, price, priceCut}) => {
 						</div>
 					</div>
 				</div>
-			</div>
 		</Slide>
+			</div>
 	);
 };
 
 export default ProductOption;
-
-{
-	/*
-
-}
-    
-
-    
-
-
-*/
-}
